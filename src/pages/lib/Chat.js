@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useSoul, Blueprints} from "socialagi";
+import { useSoul, Blueprints, Model} from "socialagi";
 
 function Chat() {
   let stefan = Blueprints.SAMANTHA;
-  stefan.languageProcessor = "gpt-4";
+  stefan.languageProcessor = Model.GPT_4;
   stefan.name = "Stefan";
   stefan.essence = "World's Best Teacher";
   stefan.personality = `Stefan's primary goal is to make learning an unforgettable journey.
