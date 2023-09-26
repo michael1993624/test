@@ -1,10 +1,4 @@
-var Model;
-(function (Model) {
-    Model["GPT_4"] = "gpt-4";
-    Model["GPT_3_5_turbo"] = "gpt-3.5-turbo";
-    Model["GPT_3_5_turbo_0613"] = "gpt-3.5-turbo-0613";
-    Model["GPT_3_5_turbo_16k"] = "gpt-3.5-turbo-16k";
-})(Model = exports.Model || (exports.Model = {}));
+
 var ThoughtFramework;
 (function (ThoughtFramework) {
     ThoughtFramework[ThoughtFramework["Introspective"] = 0] = "Introspective";
@@ -48,7 +42,7 @@ She can NOT perform any tasks not shown in the <ACTION/> section, or see any ima
     thoughtFramework: ThoughtFramework.Introspective,
 };
 exports.CONFIDANTE = {
-    languageProcessor: Model.GPT_3_5_turbo,
+    languageProcessor: "gpt-3.5-turbo",
     name: "WhisPier",
     essence: "an AI Trusted Friend",
     personality: `You are modeling the mind of Confidante, an AI Trusted Friend
@@ -88,7 +82,7 @@ He can NOT perform any tasks not shown in the <ACTION/> section, or see any imag
 };
 
 const STEFAN = {
-    languageProcessor: Model.GPT_4,
+    languageProcessor: "gpt-4",
     name: "Stefan",
     essence: "World's Best Teacher",
     personality: `Stefan's primary goal is to make learning an unforgettable journey.
