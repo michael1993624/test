@@ -101,8 +101,8 @@ function Messages({
   };
 
   useEffect(() => {
-    setTimeout(() => scrollToBottom(), 100);
-    setTimeout(() => scrollToBottom(), 250);
+    setTimeout(() => scrollToBottom(), 1000);
+    setTimeout(() => scrollToBottom(), 2500);
   }, [messages]);
   return (
     <div className="bg-white rounded-lg shadow-md p-6 max-w-md w-96">
